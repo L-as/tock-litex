@@ -90,14 +90,27 @@ in
     #version = "patched-git-${src.upstreamRev}";
     #src = customCpuVexRiscv;
 
-    buildid = "2021030800"; # GitHub actions build of 65292ea2b2aa6c,
-                            # which is based on upstream
-                            # 7f9db486d40206 of Mar 5, 2021, 9:48 PM
-                            # GMT+1
-    version = "custom-patched-${buildid}";
+    # We're going to want to use a patched CPU with RVFI built in,
+    # hence commented out
+    #
+    # buildid = "2021030800"; # GitHub actions build of 65292ea2b2aa6c,
+    #                         # which is based on upstream
+    #                         # 7f9db486d40206 of Mar 5, 2021, 9:48 PM
+    #                         # GMT+1
+    # version = "custom-patched-${buildid}";
+    # src = builtins.fetchTarball {
+    #   url = "https://github.com/lschuermann/litex-vexriscv-custom/releases/download/${buildid}/generated.tar.gz";
+    #   sha256 = "1hm0x9ss0frcy6wy65chnqvqln6bbb048jd388fcx98hll94d6xs";
+    # };
+
+    # Patched version with RVFI CPU variants added, based on
+    # 2021030800, which in turn is based on litex-vexriscv-custom
+    # commit 65292ea2b2aa6c, which is based on upstream 7f9db486d40206
+    # of Mar 5, 2021, 9:48 PM GMT+1
+    version = "rvfi-patched-ghactions-run-13";
     src = builtins.fetchTarball {
-      url = "https://github.com/lschuermann/litex-vexriscv-custom/releases/download/${buildid}/generated.tar.gz";
-      sha256 = "1hm0x9ss0frcy6wy65chnqvqln6bbb048jd388fcx98hll94d6xs";
+      url = "https://cloud.currently.online/s/Bpq85L3cxAGjXb7/download";
+      sha256 = "0318fh51clvh6y8s53111xm6gp0m6gx5vfgc5vnma8vpqlsy9a58";
     };
 
     doCheck = false;

@@ -41,6 +41,14 @@ rec {
     };
   };
 
+  litex-rvfi-tracer = pkgs.callPackage ./litex-rvfi-tracer.nix {
+    python3Packages = pkgs.python3Packages // {
+      litex = litex;
+      migen = migen;
+    };
+  };
+
+
   litescope = pkgs.callPackage ./litescope.nix {
     python3Packages = pkgs.python3Packages // {
       litex = litex;

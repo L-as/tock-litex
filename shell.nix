@@ -17,6 +17,7 @@ in
       liteeth
       liteiclink
       litescope
+      litex-rvfi-tracer
       pythondata-cpu-vexriscv pkgsCross.riscv64.buildPackages.gcc gnumake
 
       # For simulation
