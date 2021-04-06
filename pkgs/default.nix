@@ -54,4 +54,18 @@ rec {
       litex = litex;
     };
   };
+
+  litehyperbus = pkgs.callPackage ./litehyperbus.nix {
+    python3Packages = pkgs.python3Packages // {
+      migen = migen;
+      litex = litex;
+    };
+  };
+
+  litepcie = pkgs.callPackage ./litepcie.nix {
+    python3Packages = pkgs.python3Packages // {
+      migen = migen;
+      litex = litex;
+    };
+  };
 }

@@ -24,8 +24,8 @@ in
     buildInputs = with pkgs; with (litexPkgs pkgs); [
       python38
 
-      litex litex-boards litedram liteeth liteiclink
-      pythondata-cpu-vexriscv
+      litex litex-boards litedram liteeth liteiclink litepcie
+      litehyperbus pythondata-cpu-vexriscv
 
       pkgsCross.riscv64-embedded.buildPackages.gcc
     ] ++ (
@@ -36,7 +36,7 @@ in
     );
 
     buildPhase = builtins.concatStringsSep " " ([
-      "${pkgs.python38}/bin/python3.8 ./litex_boards/targets/nexys_video.py"
+      "${pkgs.python38}/bin/python3.8 ./litex_boards/targets/digilent_nexys_video.py"
       "--uart-baudrate=1000000"
       "--cpu-variant=tock+secure+imc"
       "--csr-data-width=32"
@@ -50,6 +50,6 @@ in
 
     installPhase = ''
       mkdir -p $out
-      cp -rf ./build/nexys_video/* $out/
+      cp -rf ./build/digilent_nexys_video/* $out/
     '';
   }

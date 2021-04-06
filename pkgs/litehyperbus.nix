@@ -3,21 +3,23 @@
 with python3Packages;
 
 buildPythonPackage rec {
-  pname = "litex-boards";
-  rev = "03accabc257ca"; # litex-boards master of Mar 31, 2021, 9:48 AM GMT+2
+  pname = "litehyperbus";
+  rev = "5282d5167c4c91"; # litepcie master of Nov 24, 2020, 1:45 PM GMT+1
   version = "git-${rev}";
 
   src = fetchFromGitHub {
     owner = "litex-hub";
     repo = pname;
     rev = rev;
-    sha256 = "0lfbr6qhjgwbsw0p4zpfb6w3frsbnc9wnjw95klkjan8dhi9c8y1";
+    sha256 = "0y8cg8ai2rvszvcym9wads3sa38d4zhd4b28d342hgi242p6v3m9";
   };
 
   buildInputs = [
     litex
+    pyyaml
+    migen
   ];
 
-  # TOOD: Fix tests
+  # TODO: fix tests
   doCheck = false;
 }
