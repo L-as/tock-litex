@@ -2,13 +2,13 @@
 # versions.
 
 [litex]
-github_user = "enjoy-digital"
+# Using a fork containing the litex_sim GPIO patch and simctrl support
+github_user = "lschuermann"
 github_repo = "litex"
 
-# litex master of Jul 15, 2021, 7:00 PM GMT+2
-git_revision = "e0d5a7bff55923"
+git_revision = "dbe381af83f21805d0a4b03c906e45970a792cc4"
 
-github_archive_nix_hash = "sha256-wPhrnPdRDhNbU2qRUz9I2zkcDc92JnPQZfPDdpCEcyU="
+github_archive_nix_hash = "sha256:1rp2jhw6dz5nfdf7fxa1hb1sgxprssqk4bdamz874im603fk284d"
 
 [litex-boards]
 github_user = "litex-hub"

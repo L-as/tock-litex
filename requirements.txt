@@ -1,4 +1,4 @@
-git+https://github.com/enjoy-digital/litex@e0d5a7bff55923#egg=litex
+git+https://github.com/lschuermann/litex@dbe381af83f21805d0a4b03c906e45970a792cc4#egg=litex
 git+https://github.com/litex-hub/litex-boards@4b48f15265c902#egg=litex-boards
 git+https://github.com/enjoy-digital/liteeth@947ed037202a99#egg=liteeth
 git+https://github.com/enjoy-digital/litedram@4326fe7f36699a#egg=litedram
