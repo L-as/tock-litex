@@ -14,13 +14,13 @@ github_archive_nix_hash = "0y5v1kyq7vildrx8c7278dvc33gqxnida9c5q2mkfh6x0y2g37s8"
 github_user = "enjoy-digital"
 github_repo = "liteeth"
 git_revision = "f43188d81cd8f9639a75bed2729bcd8f4e708bd5"
-github_archive_nix_hash = "0hdx1xsm950hin6h6zc5rbbsif8c82cx08ly5j9v7ryxxqdwiqws"
+github_archive_nix_hash = "ezBIHGp2YjpA0Ob8HtyrCDHbCA3+00x40vJf7ByHsEY="
 
 [litedram]
 github_user = "enjoy-digital"
 github_repo = "litedram"
 git_revision = "dd85a5744d0ed0c359c4d3d82151fe69ca7b8632"
-github_archive_nix_hash = "1a0b04gj7s1cqa50llmzvj3gzzf7z56flziym5sy1l8k02yzjj09"
+github_archive_nix_hash = "+IHy2g5mGnZmLVfa9X7Lp37qO5UvdL8JCJKeqZDNV5s="
 
 [litehyperbus]
 github_user = "litex-hub"
@@ -44,7 +44,7 @@ github_archive_nix_hash = "1l9jxm10171cxjmyd887ng158kalk6a384cra6n90s5ph0g3fxpx"
 github_user = "enjoy-digital"
 github_repo = "litescope"
 git_revision = "5dd5fa6ce3a996d5e667559c386fe5c60bc0dc6e"
-github_archive_nix_hash = "05magklqd2jjnb92azj4w00smp7bgijkk16l2d706qii1a06nhmk"
+github_archive_nix_hash = "5/5WATOBllb0wXVfTPtkivdWCzwQCK9ijGsbCBk4Q4Q="
 
 [litespi]
 github_user = "litex-hub"
