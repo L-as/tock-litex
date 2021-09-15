@@ -2,7 +2,7 @@
 github_user = "enjoy-digital"
 github_repo = "litex"
 git_revision = "a3309c3510e647e2e9e6380d18774a30bf48849d"
-github_archive_nix_hash = "09bkhj87dhzkcp8769knrw6iqffv90zm74baaddi63jiyyf6py60"
+github_archive_nix_hash = "jBGxPwM8bWf+cJOSiTVDFzI5gh5ByIEdt+BlCjK8ock="
 
 [litex-boards]
 github_user = "litex-hub"
